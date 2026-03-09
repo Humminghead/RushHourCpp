@@ -1,13 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
 
-include(ExternalProject)
-
-ExternalProject_Add(
-  ChronoTimer
-  GIT_REPOSITORY https://github.com/Humminghead/ChronoTimer.git
-  GIT_TAG main
-  CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_BINARY_DIR}/3rdparty/inst)
-
 project(operators_pp_lh_rh LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 23)
