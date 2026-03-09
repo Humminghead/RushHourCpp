@@ -1,5 +1,13 @@
 cmake_minimum_required(VERSION 3.16)
 
+include(ExternalProject)
+
+ExternalProject_Add(
+  ChronoTimer
+  GIT_REPOSITORY https://github.com/Humminghead/ChronoTimer.git
+  GIT_TAG main
+  CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_BINARY_DIR}/3rdparty/inst)
+
 project(RushHourCppExamples LANGUAGES CXX)
 
 file(GLOB_RECURSE PROJECTS ${CMAKE_CURRENT_SOURCE_DIR}/ "*/CMakeLists.txt")
