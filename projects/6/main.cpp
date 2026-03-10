@@ -3,7 +3,7 @@
 #include <map>
 #include <vector>
 
-#include <ChronoTimer/chronotimer.h>
+#include <chronotimer.h>
 
 using namespace std;
 
