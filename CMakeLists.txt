@@ -6,12 +6,8 @@ FetchContent_Declare(
   ChronoTimer
   GIT_REPOSITORY https://github.com/Humminghead/ChronoTimer.git
   GIT_TAG main
-#  CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_BINARY_DIR}/3rdparty/inst)
 )
-
 FetchContent_MakeAvailable(ChronoTimer)
-
-#set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "cmake")
 
 project(RushHourCppExamples LANGUAGES CXX)
 
